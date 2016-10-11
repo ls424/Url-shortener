@@ -1,6 +1,6 @@
 # Url-shortener
 
-###How to deploy 
+###How to run locally 
 
 ##### 
      nodemon server.js
