@@ -5,7 +5,7 @@ var redirectRouter = require('./routes/redirect');
 var indexRouter = require('./routes/index');
 var mongoose = require('mongoose');
 
-mongoose.connect("mongodb://user:user@ds057386.mlab.com:57386/tinyurl");
+mongoose.connect("Your own mlab MongoDB URI");
 
 app.use("/public", express.static(__dirname + "/public"));
 
