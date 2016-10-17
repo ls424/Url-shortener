@@ -1,27 +1,27 @@
 nginx:
   build: ./nginx
   ports:
-    - "3000:80"
+    - "80:80"
   links:
     - "tinyurl1:tinyurl1"
     - "tinyurl2:tinyurl2"
     - "tinyurl3:tinyurl3"
 
-app1:
+tinyurl1:
   build: ./app
   ports:
     - "3000"
   links:
     - "cache:redis"
 
-app2:
+tinyurl2:
   build: ./app
   ports:
     - "3000"
   links:
     - "cache:redis"
 
-app3:
+tinyurl3:
   build: ./app
   ports:
     - "3000"

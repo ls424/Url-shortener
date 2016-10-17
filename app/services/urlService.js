@@ -77,7 +77,7 @@ var getLongUrl = function (shortUrl, callback) {
 
     redisClient.get(shortUrl, function (err, longUrl) {
         if (longUrl) {
-            console.log("byebye mongo");
+            console.log("bye mongo");
             callback({
                 shortUrl: shortUrl,
                 longUrl: longUrl
