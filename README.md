@@ -4,7 +4,7 @@ This is a Mean-stack(MongoDB Express AngularJS Node.JS) web application currentl
 
 (MongoDB, Nginx, Redis, Express, AngularJS, Nodejs, HTML, CSS, JavaScript, Bootstrap)
 ###Features
-######1.This web applciation applies Nginx as as reverse proxy and load balancer when user's number exploded.
+######1.This web applciation applies Nginx as as reverse proxy and load balancer to distribute queries to several servers at the same time.
 ######2.Redis is used as cache between MongoDB and Nignx to improve query efficency.
 ######3.The whole web application is packaged in Docker which is easy to be deployed on different machines. That means you don't need to configure the Nginx and Redis everytime on a new machine, which save a lot of steps and time.
 
