@@ -1,7 +1,12 @@
 # Url-shortener
 ##Introduction
 This is a Mean-stack(MongoDB Express AngularJS Node.JS) web application currently deployed locally to deliver URL shortening service. It takes a regular long URL as input and returns a long URL as an output. When users type a short URL which is generated before in the browser, they will be directed to the website that the original long url points to. All the data pairs shortUrl:longUrl is stored in mongodb and will be migrated to Apache Cassandra later to extend scalability. Besides, the service provides the REST APIs that other apps and services can access data by sending HTTP requests.
-The whole web application is packaged in Docker which is easy to be deployed on different machines.
+
+(MongoDB, Nginx, Redis, Express, AngularJS, Nodejs, HTML, CSS, JavaScript, Bootstrap)
+###Features
+######1.This web applciation applies Nginx as as reverse proxy and load balancer when user's number exploded.
+######2.Redis is used as cache between MongoDB and Nignx to improve query efficency.
+######3.The whole web application is packaged in Docker which is easy to be deployed on different machines. That means you don't need to configure the Nginx and Redis everytime on a new machine, which save a lot of steps and time.
 
 ##How to deploy locally 
 
