@@ -23,7 +23,7 @@ In this project, we are using Mlab which provideds cloud service of MongoDB. So 
      docker run --name tinyCon -p 3000:3000 -d lin/tinyurl
 #####Step 4 Start Nginx and redis
      docker docker-compose up --build
-#####Step 5 Open your browser and type in(192.168.99.100 is the ip address of the docker-machien that the container is running in, it might varies when your local computer geenrate different ip address, we are listening at port of 80)
+#####Step 5 Open your browser and type in(192.168.99.100 is the ip address of the docker-machine that the container is running in, it might varies when your local computer generate different ip address, we are listening at port of 80)
      192.168.99.100:80
      
      
